@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #B3001B; 
+    --secondary-color: #262626;
+    --accent1-color: #255C99; 
+    --accent2-color: #7EA3CC; 
+    --text-color: #CCAD8F; 
+}
+
+body {
+    font-family: 'Afacad Flux', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: rgb(252, 123, 123);
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Edu Australia VIC WA NT Hand Guides', cursive;
+    color: rgb(235, 92, 92);
+}
+
+article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a img {
+    width: 30px; 
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Edu Australia VIC WA NT Hand Guides', cursive; 
+    color: var(--primary-color);
+}
