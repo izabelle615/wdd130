@@ -12,15 +12,11 @@ body {
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
+    max-width: 1200px; /* Limit the width of the page */
+    margin: 0 auto; /* Center the page */
 }
 
 header {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 120px 1fr 2fr;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
     background-color: var(--primary-color);
     color: rgb(252, 123, 123);
     text-align: center;
@@ -29,46 +25,58 @@ header {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     margin: 0 15px;
 }
 
 .hero {
-    position: relative;
+    position: relative; /* Required for absolutely positioning child elements */
 }
 
 .hero img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 100%; /* Fill the container width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 h1 {
-    position: absolute;
+    position: absolute; /* Positioning on top of the hero image */
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Edu Australia VIC WA NT Hand Guides', cursive;
+    font-family: 'Edu AU VIC WA NT Guides', cursive;
     color: rgb(235, 92, 92);
 }
 
 article {
-    position: absolute;
+    position: absolute; /* Position on top of the hero image */
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Adjusted opacity for readability */
     color: white;
     padding: 15px;
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+article img {
+    float: right; /* Float the image to the right of the paragraph */
+    margin-left: 10px; /* Add space between text and image */
+    max-width: 150px; /* Limit the size of the floating image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 footer {
-    text-align: left;
+    text-align: center;
     padding: 20px;
 }
 
 footer p {
     margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none; /* Remove underline from social media links */
 }
 
 footer a img {
@@ -81,43 +89,11 @@ section {
 }
 
 h2 {
-    font-family: 'Edu Australia VIC WA NT Hand Guides', cursive; 
+    font-family: 'Edu AU VIC WA NT Guides', cursive; 
     color: var(--primary-color);
 }
 
-.logo img {
-    margin: 0 0.25rem 0 1rem;
-    width: 64px;
-    height: auto;
-}
-
-h1 {
-    font-size: 2rem;
-    font-family: Acme, Arial, sans-serif;
-}
-
-nav {
-    text-align: right;
-}
-
-.navigation {
-    display: flex;
-    list-style: none;
-}
-
-.navigation li {
-    flex: 1 1 100%;
-}
-
-.navigation a {
-    display: block;
-    color: navy;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    color: tomato;
-    font-weight: 700;
-    text-decoration: underline;
+p {
+    color: var(--text-color); /* Ensure paragraphs have the designated text color */
+    line-height: 1.6; /* Improve readability */
 }
