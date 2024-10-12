@@ -7,63 +7,101 @@
 }
 
 body {
-    font-family: 'Afacad Flux', sans-serif; 
+    font-family: 'Edu AU VIC WA NT Guides', sans-serif; 
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    max-width: 1200px; /* Limit the width of the page */
-    margin: 0 auto; /* Center the page */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: var(--primary-color);
-    color: rgb(252, 123, 123);
-    text-align: center;
     padding: 20px;
+}
+
+.logo {
+    max-width: 150px; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
     color: white;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     margin: 0 15px;
 }
 
 .hero {
-    position: relative; /* Required for absolutely positioning child elements */
+    position: relative;
 }
 
 .hero img {
     display: block;
-    width: 100%; /* Fill the container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 h1 {
-    position: absolute; /* Positioning on top of the hero image */
+    position: absolute;
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Edu AU VIC WA NT Guides', cursive;
     color: rgb(235, 92, 92);
 }
 
 article {
-    position: absolute; /* Position on top of the hero image */
+    position: absolute;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Adjusted opacity for readability */
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 15px;
-    border-radius: 8px; /* Optional: add rounded corners */
+    border-radius: 8px;
 }
 
 article img {
-    float: right; /* Float the image to the right of the paragraph */
-    margin-left: 10px; /* Add space between text and image */
-    max-width: 150px; /* Limit the size of the floating image */
-    height: auto; /* Maintain aspect ratio */
+    float: right; 
+    margin-left: 10px;
+    max-width: 150px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.history {
+    padding: 20px;
+}
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.adventures figure {
+    margin: 10px; 
+    flex: 1 1 30%; 
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%; 
+    height: auto; 
 }
 
 footer {
@@ -76,16 +114,12 @@ footer p {
 }
 
 footer a {
-    text-decoration: none; /* Remove underline from social media links */
+    text-decoration: none;
 }
 
 footer a img {
     width: 30px; 
     margin: 0 10px;
-}
-
-section {
-    padding: 20px;
 }
 
 h2 {
@@ -94,6 +128,6 @@ h2 {
 }
 
 p {
-    color: var(--text-color); /* Ensure paragraphs have the designated text color */
-    line-height: 1.6; /* Improve readability */
+    color: var(--text-color); 
+    line-height: 1.6;
 }
