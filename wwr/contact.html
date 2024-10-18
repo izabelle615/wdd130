@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Rapids</title>
+    <meta name="description" content="Get in touch with The Rapids. Contact us for inquiries, reservations, or suggestions. We're here to help!">
+    <meta name="author" content="Izabelle Harker">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/Rapids_logo.jpg" alt="The Rapids Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p>Address: 123 Rivers, The Rapids, MT 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:info@therapids.com">info@therapids.com</a></p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>Jane Doe - Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>John Doe - Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Sally Sue - Customer Service</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label>Purpose of Message:</label>
+                <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                <label for="general-inquiry">General Inquiry</label>
+                <input type="radio" id="reservation-question" name="purpose" value="Reservation Question" required>
+                <label for="reservation-question">Reservation Question</label>
+                <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion" required>
+                <label for="website-suggestion">Website Suggestion</label>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Rapids - Izabelle Harker</p>
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/en/"><img src="images/tiktok.png" alt="TikTok"></a>
+    </footer>
+</body>
+</html>
