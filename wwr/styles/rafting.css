@@ -57,51 +57,48 @@ h1 {
     color: rgb(235, 92, 92);
 }
 
-article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 15px;
+.cta {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
     border-radius: 8px;
 }
 
-article img {
-    float: right; 
-    margin-left: 10px;
-    max-width: 150px;
-    height: auto;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px 0;
 }
 
-.history {
-    padding: 20px;
+.trip-descriptions article {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
 }
 
-.adventures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+.trip-descriptions img {
+    width: 100%;
+    height: auto;
 }
 
-.adventures figure {
-    margin: 10px; 
-    flex: 1 1 30%; 
-    text-align: center;
+.trip-table {
+    margin-top: 20px;
+    padding: 20px 0;
 }
 
-.adventures img {
-    width: 100%; 
-    height: auto; 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--text-color);
 }
 
 footer {
@@ -131,3 +128,4 @@ p {
     color: var(--text-color); 
     line-height: 1.6;
 }
+
